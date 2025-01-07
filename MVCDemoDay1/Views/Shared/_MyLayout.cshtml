@@ -1,0 +1,26 @@
+﻿<!doctype html>
+
+ <html>
+     <head>
+   
+         <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+     </head>
+
+     <body>
+         <a href="/home/index"> Index oh Home Page </a>
+         <a href="/student/index"> Student List </a>
+         @RenderBody();
+
+    @RenderSection("Sect1", false);
+         <footer>
+             @@copyright 2018 
+         </footer>
+   
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.esm.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.esm.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+     </body>
+ </html>

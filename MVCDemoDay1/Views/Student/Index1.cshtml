@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<h1> List of Students </h1>
+<table class="table table-bordered">
+    <tr>
+        <th> RN </th>
+        <th> Name </th>
+        <th> Batch </th>
+        <th> Marks </th>
+    </tr>
+
+    @{
+        foreach (var student in @Model)
+        {
+            <tr>
+                <td>
+                    @student.Rn
+                </td>
+
+                <td>  @student.Name </td>
+
+                <td>     @student.Batch </td>
+            </tr>
+        }
+    }
+
+</table>
