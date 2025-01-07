@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+
+
+<hr />  IN List
+<h1 color="red"> Hello @TempData["name"] </h1>
+
+@{
+    foreach(var temp in (List<string>)ViewData["list"])
+    {
+         @temp<br/>
+    }
+}
+
